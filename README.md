@@ -31,4 +31,11 @@ It is responsive, so it keeps working when you resize your window.
 | option | type | default | description |
 | ------ | ---- | ------- | ----------- |
 | *wait* | `boolean` | `false` | If `true`, the plugin will wait to do its work until you start the plugin manually. Take a look at the [advanced example](https://github.com/JorenVanHee/EqualHeight.js/blob/master/demo/advanced.html). |
-| *responsive* | `boolean` | `true` | Adjust height when necessary if you resize your window. |
+| *responsive* | `boolean` | `true` | Adjusts height when necessary if you resize your window. |
+
+```javascript
+$('.elements').equalHeight({
+    wait: false,
+    responsive: true
+});
+```
