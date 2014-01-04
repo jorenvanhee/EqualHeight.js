@@ -39,3 +39,19 @@ $('.elements').equalHeight({
     responsive: true
 });
 ```
+
+## Methods
+
+Take a look at the [advanced example](https://github.com/JorenVanHee/EqualHeight.js/blob/master/demo/advanced.html).
+
+| method | description |
+| ------ | ----------- |
+| *start* | Start the plugin. |
+| *stop* | Stop the plugin and reset the elements. |
+| *magic* | Set the height of each element to the height of the highest element. |
+| *reset* | Remove all styles added by this plugin. |
+
+```javascript
+var eh = $('.elements').equalHeight();
+eh.method();
+```
