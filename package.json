@@ -1,0 +1,12 @@
+{
+    "name": "jquery-equal-height",
+    "title": "EqualHeight.js",
+    "author": "Joren Van Hee",
+    "homepage": "https://github.com/JorenVanHee/EqualHeight.js",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-uglify": "~0.2.7",
+        "grunt-contrib-concat": "~0.3.0"
+    }
+}

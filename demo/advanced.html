@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>EqualHeight.js | Advanced</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Advanced</h1>
+
+<p>In this example, the plugin only works when the window has a minimum width of 500 pixels.</p>
+
+<div class="Grid Grid--demo">
+    
+    <div class="Grid-col">
+        <p>Quod, corporis, doloribus, debitis recusandae illum sed assumenda rem sapiente cum soluta architecto cumque repellat quisquam eius ipsa ab dolores libero a!</p>
+    </div>
+
+    <div class="Grid-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quam eos vitae atque libero doloribus sunt nobis maiores aspernatur ducimus dolor error necessitatibus recusandae. Neque a ea rerum accusantium est. Lorem</p>
+    </div>
+
+    <div class="Grid-col">
+        <p>Facilis, optio.</p>
+    </div>
+
+    <div class="Grid-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quam eos vitae atque libero doloribus sunt nobis maiores aspernatur ducimus dolor error necessitatibus recusandae.</p>
+    </div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../dist/jquery.equalheight.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    var equalHeight = $('.Grid--demo p').equalHeight({wait: true});
+
+    // Browser supports matchMedia
+    if (window.matchMedia) {
+
+        // MediaQueryList
+        var mql = window.matchMedia("(min-width: 500px)");
+
+        // MediaQueryListListener
+        var equalHeightCheck = function (mql) {
+            if (mql.matches) {
+                equalHeight.start();
+            } else {
+                equalHeight.stop();
+            }
+        };
+
+        // Add listener
+        mql.addListener(equalHeightCheck);
+
+        // Manually call listener
+        equalHeightCheck(mql);
+
+    }
+
+    // Browser doesn't support matchMedia
+    else {
+
+        equalHeight.start();
+        
+    }
+
+});
+</script>
+</body>
+</html>

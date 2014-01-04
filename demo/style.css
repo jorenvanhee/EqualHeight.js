@@ -1,0 +1,31 @@
+.Grid {
+	margin-left: -1em;
+	overflow: auto;
+}
+
+.Grid-col {
+	width: 100%;
+	padding-left: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+
+@media (min-width: 500px) {
+	.Grid--demo .Grid-col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.Grid--demo .Grid-col {
+		width: 25%;
+	}
+}
+
+.Grid p {
+	padding: 1em;
+	margin: 0 0 1em;
+	background-color: #add8e6;
+}
