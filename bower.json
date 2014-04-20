@@ -1,0 +1,22 @@
+{
+    "name": "equalheight",
+    "version": "1.0.0",
+    "main": "dist/jquery.equalheight.js",
+    "dependencies": {
+        "jquery": ">=1.7"
+    },
+    "authors": [
+        "Joren Van Hee"
+    ],
+    "description": "A jQuery plugin that sets the height of each element in a group to the height of the highest element.",
+    "ignore": [
+        "**/*",
+        "!dist/jquery.equalheight.js"
+    ],
+    "keywords": [
+        "equal",
+        "height",
+        "jquery",
+        "plugin"
+    ]
+}
