@@ -4,7 +4,7 @@ EqualHeight.js
 A jQuery plugin that sets the height of each element in a group to the height of the highest element.  
 It is responsive, so it keeps working when you resize your window.
 
-## Usage
+## Install
 
 1. Include jQuery:
 
@@ -18,13 +18,19 @@ It is responsive, so it keeps working when you resize your window.
     <script src="dist/jquery.equalheight.min.js"></script>
     ```
 
-3. Call the plugin:
+### Bower
 
-    ```javascript
-    $(document).ready(function () {
-        $('.elements').equalHeight();
-    }
-    ```
+```
+bower install equalheight
+```
+
+## Usage
+
+```javascript
+$(document).ready(function () {
+    $('.elements').equalHeight();
+}
+```
 
 ## Options
 
