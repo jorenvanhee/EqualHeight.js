@@ -48,6 +48,9 @@
                 topHeight = height > topHeight ? height : topHeight;
             }
 
+            // If this.stop was called during execution of this function, abort
+            if (!this.active) return;
+
             // Set min-height on elements.
             for (var j = 0; j < this.elements.length; j++) {
                 var element = $(this.elements[j]);
@@ -59,6 +62,9 @@
                     element.css("min-height", topHeight);
                 }
             }
+
+            // If this.stop was called during executing of this function, reset
+            if (!this.active) this.reset();
         },
 
         /**
