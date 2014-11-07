@@ -29,7 +29,7 @@ bower install equalheight
 ```javascript
 $(document).ready(function () {
     $('.elements').equalHeight();
-}
+});
 ```
 
 ## Options
