@@ -1,5 +1,7 @@
-EqualHeight.js
+[DEPRECATED] EqualHeight.js
 ==============
+
+**I do not longer maintain this plugin. Please use [jquery-match-height](https://github.com/liabru/jquery-match-height) (it's better).**
 
 A jQuery plugin that sets the height of each element in a group to the height of the highest element.  
 It is responsive, so it keeps working when you resize your window.
